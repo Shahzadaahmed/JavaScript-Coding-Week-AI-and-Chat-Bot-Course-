@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Program # 09 </title>
+
+    <!-- Note: Bootstrap css CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Note: Linking to external css file -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <h4 id="header">
+            Q9: Write a JavaScript program to calculate multiplication and division of two numbers.
+        </h4>
+
+        <hr />
+
+        <h4 id="header">
+            Solution:
+        </h4>
+
+        <h5 id="header">
+            Enter number one and two!
+        </h5>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Enter a number!" aria-label="Enter a number!"
+                aria-describedby="button-addon2" id="value1" />
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Enter another number!" aria-label="Enter a number!"
+                aria-describedby="button-addon2" id="value2" maxlength="3" />
+        </div>
+
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+            onclick="multiplyFunc()">Multiply</button>
+
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="divideFunc()">Divide</button>
+
+        <h5 id="value1-el">
+        </h5>
+
+        <h5 id="value2-el">
+        </h5>
+    </div>
+
+    <!-- Note: Linking to external js file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
